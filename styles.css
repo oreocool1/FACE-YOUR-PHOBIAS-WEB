@@ -1,0 +1,96 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	background-color: rgb(5, 5, 5); /* Light gray background */
+	color: #333; /* Dark gray text */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+header {
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+	color: white;
+	height: auto;
+	vertical-align: central;
+}
+#header-txt{
+	font-size: 60px;
+	color: goldenrod;
+}
+
+p{
+	font-size: 20px;
+	color: white;
+}
+
+h1{
+	color: white;
+	font-size: 35px;
+}
+#center {
+	vertical-align: middle;
+}
+
+footer {
+	background-color: rgb(43, 44, 44);
+	text-align: center;
+	color: white;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.GRID {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	column-gap: 0px;
+	gap: 0PX 0PX;
+}
+
+
+
+#Nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#NavList {
+	float: left;
+	text-align:center;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #04AA6D;
+}
+.container {
+	max-width: 94%; /* Set a maximum width for the content */
+	margin: 10px; /* Center the content horizontally */
+	padding: 25px;
+	background-color: rgb(43, 44, 44); /* White background for the main content area */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+	border-radius: 8px; /* Slightly rounded corners */
+	
+}
+main {
+	padding: 20px;
+	flex: 1; /* Allow main content to expand and fill available space */
+}
+

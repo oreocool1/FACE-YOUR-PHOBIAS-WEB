@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="veiwport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<header>
+    <!--<h1 id="header-txt">THIS IS IN DEVELOPMENT EXPECT ERRORS</h1>-->
+    <h1>Face your phobias</h1>
+</header>
+<ul id="Nav">
+    <li id="NavList"><a class="active" href="#home">home</a></li>
+    <li id="NavList"><a href="survey.html">survey</a></li>
+    <li><img src="logo.jpg" alt="placeholder img" style="padding:0px " align="right"  height="50" /></li>
+</ul>
+<articlel>
+    <div class="container">
+        <p>relese date</p>
+        <div class="GRID">
+            <img src="logo.jpg" height="120" alt="logo" />
+            <p>The game is till in development and will take a while to be relesed</p>
+        </div>
+        <div id="countdown" style="color: white; font-size: 20px;"></div>
+        <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="countdown"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Uncomfirmed";
+  }
+}, 1000);
+        </script>
+    </div>
+    <div class="container">
+        <p>Face your fears is a game based on faceing your fears/phobias face on this will include things like spiders hights ext. If you would like to give us suggestions join our discord or take the public servay </p>
+    </div>
+    </main>
+</article>
+<footer>
+    <div class="GRID">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><a href="https://x.com/phobias83532?t=7BG0QOd9jUxmHs7JeggAgw&s=09"><img src="X white logo.png" height="50"></div>
+        <div><a href="https://www.tiktok.com/@face.your.phobias?_t=ZG-8tpJfDTGOQ4&_r=1 "><img src="tiktok.png"  height="50" style="vertical-align: middle;" /></a></div>
+        <div><p>Please check all our socials</p></div>
+        <div><a href="https://www.youtube.com/@Faceyourphobias-x6r"><img src="youtube.png" height="50" /></a></div>
+        <div><a href="https://discord.gg/TjgdaCSKKd"><img src="discord png white.png" height="50"></a></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</footer>
+</body>
+</html>
